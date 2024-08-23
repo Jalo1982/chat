@@ -179,9 +179,11 @@ class _AuthScreenState extends State<AuthScreen> {
                                   _isLogin = !_isLogin;
                                 });
                               },
-                              child: Text(_isLogin
-                                  ? 'Create an account'
-                                  : 'I already have an account'),
+                              child: Text(
+                                _isLogin
+                                    ? 'Create an account'
+                                    : 'I already have an account',
+                              ),
                             ),
                         ],
                       ),
