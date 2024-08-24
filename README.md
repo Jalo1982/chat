@@ -1,16 +1,61 @@
-# chat
+# Chat App
 
-A new Flutter project.
+A simple chat application built with Flutter and Firebase.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- User Authentication (Sign Up, Login)
+- Real-time Chat Functionality
+- Push Notifications
+- User Profile with Image Upload
 
-A few resources to get you started if this is your first Flutter project:
+## Folder Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```plaintext
+chat-app/
+├── android/
+├── ios/
+├── lib/
+│   ├── screens/
+│   │   ├── auth.dart
+│   │   ├── chat.dart
+│   │   └── splash.dart
+│   ├── widget/
+│   │   ├── chat_messages.dart
+│   │   ├── message_bubble.dart
+│   │   ├── new_messages.dart
+│   │   └── user_image_picker.dart
+│   ├── main.dart
+│   └── firebase_options.dart
+├── assets/
+│   └── images/
+│       └── chat.png
+├── pubspec.yaml
+├── android/
+├── ios/
+└── test/
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Getting Started
+
+Prerequisites
+- Flutter SDK
+- Firebase account
+
+Installation:
+
+1. Clone the repository:
+  git clone https://github.com/Jalo1982/chat-app.git cd chat-app
+
+2. Install dependencies:
+  flutter pub get
+
+3. Set up Firebase:
+* Follow the instructions to add your Firebase project configuration to the app.
+* Replace the contents of lib/firebase_options.dart with your Firebase configuration.
+
+4. Run the app: 
+  flutter run
+
+Contributing
+  Contributions are welcome! Please fork the repository and submit a pull request.
